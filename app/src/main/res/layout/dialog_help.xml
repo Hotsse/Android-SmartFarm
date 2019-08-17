@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:text="도움말" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#222"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:text="1. 날씨 정보는 기상청의 정보를 기반으로 구성됩니다.\n기상 정보는 72시간 뒤까지 제공됩니다." />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:text="2. 센서 정보 및 수도 밸브 관리는 센서가 활성화 된 상태에서만 가능합니다. 센서를 켠 상태에서 기능을 사용해 주세요."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:text="3. CCTV 스트리밍은 IP 카메라가 활성화 된 상태에서만 가능합니다. IP 카메라를 켠 상태에서 기능을 사용해 주세요."/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

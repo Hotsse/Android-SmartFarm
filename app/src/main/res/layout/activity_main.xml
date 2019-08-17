@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutWeather"
+    android:background="@drawable/gradient_background_day">
+
+
+    <LinearLayout
+        android:id="@+id/layoutLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/imgWeatherLoadingWheel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:tint="#eee"
+            android:src="@drawable/loading_wheel"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#eee"
+        android:text="현재 날씨"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="0.6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#eee"
+            android:textSize="30dp"
+            android:text="임실군 청웅면"/>
+        <TextView
+            android:id="@+id/textCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#eee"
+            android:textSize="15dp"
+            android:text="9월 18일 월요일 오전 1:05"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgCurrentWeaIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:tint="#eee"
+                android:src="@drawable/sun"/>
+
+            <TextView
+                android:id="@+id/textCurrentTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#eee"
+                android:textSize="50dp"
+                android:text="20도"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#eee"
+        android:text="시간별 날씨"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <ImageButton
+            android:id="@+id/selMenuButton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5555"
+            android:tint="@color/colorPrimary"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/sun_cloud"/>
+
+        <ImageButton
+            android:id="@+id/selMenuButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0fff"
+            android:tint="#eee"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/blueberry"/>
+
+        <ImageButton
+            android:id="@+id/selMenuButton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0fff"
+            android:tint="#eee"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/cctv"/>
+
+        <ImageButton
+            android:id="@+id/selMenuButton4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0fff"
+            android:tint="#eee"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/option"/>
+
+    </LinearLayout>
+
+    <!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/weaText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+    -->
+
+
+</LinearLayout>
+

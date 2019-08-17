@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#222"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/optIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:tint="#eee"
+        android:src="@drawable/sun"/>
+
+    <TextView
+        android:id="@+id/optTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:gravity="left"
+        android:textColor="#eee"
+        android:textSize="20dp"
+        android:text="공지사항"/>
+
+
+</LinearLayout>

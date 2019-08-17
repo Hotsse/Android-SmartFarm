@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutOption">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.08">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.4">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="사업자번호: 750-93-00335"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="주소 : 전라북도 임실군 임실읍 신안2길 5-1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.6">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <ListView
+                    android:id="@+id/listview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.92">
+
+        <ImageButton
+            android:id="@+id/selMenuButton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0fff"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/sun_cloud"/>
+
+        <ImageButton
+            android:id="@+id/selMenuButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0fff"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/blueberry"/>
+
+        <ImageButton
+            android:id="@+id/selMenuButton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0fff"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/cctv"/>
+
+        <ImageButton
+            android:id="@+id/selMenuButton4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5555"
+            android:tint="@color/colorPrimary"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25"
+            android:src="@drawable/option"/>
+
+    </LinearLayout>
+
+</LinearLayout>

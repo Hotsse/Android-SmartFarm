@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/weaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:textColor="#eee"
+        android:text="오후 6시"/>
+
+    <ImageView
+        android:id="@+id/weaIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:tint="#eee"
+        android:src="@drawable/sun"/>
+
+    <TextView
+        android:id="@+id/weaTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:textColor="#eee"
+        android:text="27도"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/umbrella"
+            android:layout_weight="0.5"
+            android:tint="#eee"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/rainCert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#eee"
+            android:text="70%"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
